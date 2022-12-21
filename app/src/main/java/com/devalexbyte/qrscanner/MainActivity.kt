@@ -16,10 +16,13 @@ package com.devalexbyte.qrscanner
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
+import android.content.Context
 import android.os.Bundle
 import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 import com.devalexbyte.qrscanner.databinding.ActivityMainBinding
+import com.devalexbyte.qrscanner.helpers.AppConstants
+import com.devalexbyte.qrscanner.helpers.PreferenceUtil
 
 class MainActivity : AppCompatActivity()
 {
@@ -30,5 +33,8 @@ class MainActivity : AppCompatActivity()
         super.onCreate(savedInstanceState, persistentState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // Initialize file config.
+        PreferenceUtil.init(this, AppConstants.FILE_NAME_SETTINGS, Context.MODE_PRIVATE)
     }
 }
