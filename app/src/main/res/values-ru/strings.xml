@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">QR-Сканер</string>
+    <string name="text_button_scanning">Сканировать</string>
+    <string name="text_button_generate">Создать</string>
+    <string name="text_button_history">История</string>
+    <string name="text_button_settings">Настройки</string>
+    <string name="title_toolbar_scanning">Сканирование</string>
 </resources>
