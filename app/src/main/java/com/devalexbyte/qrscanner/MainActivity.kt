@@ -18,7 +18,6 @@ package com.devalexbyte.qrscanner
 
 import android.content.Context
 import android.os.Bundle
-import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 import com.devalexbyte.qrscanner.databinding.ActivityMainBinding
 import com.devalexbyte.qrscanner.helpers.AppConstants
@@ -28,9 +27,9 @@ class MainActivity : AppCompatActivity()
 {
     private lateinit var binding: ActivityMainBinding
 
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?)
+    override fun onCreate(savedInstanceState: Bundle?)
     {
-        super.onCreate(savedInstanceState, persistentState)
+        super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
